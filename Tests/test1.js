@@ -56,7 +56,6 @@ describe ('CLICKDOC App', function() {
         LoginFramePage.setEmail(validEmail)
         LoginFramePage.clearPassword()
         LoginFramePage.setPassword(validPassword)
-        browser.sleep(5000);
         LoginFramePage.clickLoginButton()
         browser.switchTo().defaultContent();
         MainPage.expectUserIconDisplayed()
